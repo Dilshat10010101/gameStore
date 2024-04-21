@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 227, 254);
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(255, 0, 132);
+    height: 90px;
+
+}
+
+.navBar li {
+    color: aliceblue;
+    background-color: rgb(160, 0, 115);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px;
+    font-size: 30px;
+}
+
+.controllerLogo {
+    max-width: 100px;
+    margin: 10px;
+}
+
+.banner {
+    width: 59%;
+    height: 250px;
+}
+
+
+#menu {
+    max-width: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .banner {
+        display: none;
+    }
+}
+
+.buttons {
+    border-radius: 50px;
+    margin: 30px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menuButton {
+    position: relative;
+    margin-left: 35%;
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35%;
+    top: 110%;
+    right: -10%;
+}
+
+.buttons2 {
+    border-radius: 5px;
+}
+
+.gameHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 127, 255);
+    border-radius: 20px;
+}
+
+.holderShadow {
+    margin-top: 2%;
+    border-radius: 20px;
+    max-width: 80%;
+    background-color: rgb(255, 0, 200);
+    margin-left: 10%;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.games {
+    margin: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#popular {
+    height: 300px;
+    width: 300px;
+}
+
+.games p {
+    color: aliceblue;
+    background-color: rgb(255, 0, 183);
+    border-radius: 20px;
+}
+
+.gameImg {
+    border-radius: 10px;
+    width: 150px;
+}
+
+.gameImg:hover {
+    width: 160px;
+}
+
+#popular:hover {
+    width: 310px;
+    height: 310px;
+}
+
+@media only screen and (max-width: 540px) {
+    .buttons {
+        display: none;
+    }
+
+    .menuButton {
+        display: flex;
+    }
+
+}
+
+.info{
+    background-color: rgb(249, 108, 254);
+    margin:5vw;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.imgIcons{
+    width:50px;
+}

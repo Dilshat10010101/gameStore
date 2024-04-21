@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="games.css">
+		<link rel="stylesheet" href="../style.css">
+		<title>Bird Escape</title>
+	</head>
+	<body>
+		<nav id="navbar" class="navBar">
+			<img class="controllerLogo" src="../material/game-controller-6.png" alt="image of controller">
+			<a href="../index.html">
+				<button id="button" onmouseout="buttonWhite()" onmouseover="elem=this" class="buttons">
+					<img class="imgIcons" src="../material/home.png" alt="">
+				</button>
+			</a>
+			<button id="button" onmouseout="buttonWhite()" onmouseover="elem=this" onclick="changeColor()" class="buttons">
+				<img class="imgIcons" src="../material/color.png" alt="">
+			</button>
+			<a href="../nothing.html">
+				<button id="button" onmouseout="buttonWhite()" onmouseover="elem=this" class="buttons">
+					<img class="imgIcons" src="../material/info.png" alt="">
+				</button>
+			</a>
+			<li id="gamesCount">
+				<img  class="imgIcons" src="../material/games.png" alt="">: 2</li>
+			<img id="fade1" class="banner" src="../material/banner.png" alt="banner image">
+
+			<div class="menuButton">
+				<img onclick="openDropDown()" id="menu" src="../material/menu2.png" alt="">
+				<div id="dropDownId" class="dropdown">
+					<a href="../index.html">
+						<button id="button" onmouseout="buttonWhite()" onmouseover="elem=this" class="buttons2">Home</button>
+					</a>
+					<button id="button" onmouseout="buttonWhite()" onmouseover="elem=this" onclick="changeColor()" class="buttons2">Color</button>
+					<a href="../nothing.html">
+						<button id="button" onmouseout="buttonWhite()" onmouseover="elem=this" class="buttons2">About us</button>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="currentGame">
+			<img id="popular" class="gameImg" src="../material/birdGame.png" alt="Bird Escape Game">
+			<h1>Bird Escape</h1>
+		</div>
+
+		<div id="game-container">
+			<img src="../material/bird.gif" alt="A bird" id="bird">
+		</div>
+
+		<div id="gameInfo" class="gameInfo">
+			<p>
+				Este juego trata sobre un pájaro que vive en Suecia. ¡Esta ave necesita escapar hacia el sur, donde hay calor, porque se acerca el invierno! Los estúpidos humanos han soltado accidentalmente un montón de cubos rojos voladores que tienes que esquivar. ¡Buena suerte!
+			</p>
+		</div>
+
+
+		<div id="holderShadow" class="holderShadow">
+			<h1>More games</h1>
+			<div id="gameHolder" class="gameHolder">
+				<div class="games">
+					<a href="./catchOlof.html">
+						<img class="gameImg" src="../material/catchOlofLogo.jpg.png" alt="Cathc Olof Game">
+						<p>Catch Olof</p>
+					</a>
+				</div>
+				<div class="games">
+					<img class="gameImg" src="../material/roblox.png" alt="game">
+					<p>This is a game</p>
+				</div>
+				<div class="games">
+					<img class="gameImg" src="../material/roblox.png" alt="game">
+					<p>This is a game</p>
+				</div>
+				<div class="games">
+					<img class="gameImg" src="../material/roblox.png" alt="game">
+					<p>This is a game</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="games.js"></script>
+		<script src="../main.js"></script>
+	</body>
+</html>
+

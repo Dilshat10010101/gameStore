@@ -1,0 +1,157 @@
+/*birdEscape css*/
+#game-container {
+  background-image: url('../material/backgroundBirdGame.png');
+  background-size: cover;
+  position: relative;
+  width: 60vw;
+  height: 42vw;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: 5%;
+  margin-left: 5vw;
+}
+
+.obstacle {
+  background-image: url('../material/red.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  animation: moveLeft 2s linear infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+#bird {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  width: 50px;
+  height: 50px;
+}
+
+.currentGame {
+  width: 180px;
+  height: 180px;
+  margin-top: 30px;
+  margin-left: 5vw;
+  text-align: center;
+}
+
+.currentGame img {
+  border: 2px solid black;
+  max-width: 180px;
+  max-height: 180px;
+}
+
+.holderShadow h1 {
+  color: aliceblue;
+}
+
+#game-container:hover{
+  cursor:none;
+}
+
+/* catchOlof css*/
+
+#game-container2 {
+  background-image: url('../material/frozen.jpg');
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  position: relative;
+  border: black solid 1px;
+  margin: 5vw;
+}
+
+.object {
+  height: 150px;
+  width: 120px;
+  position: absolute;
+  background: url('../material/olaf2.png');
+  background-size: cover;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+#countdown {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: beige;
+  background-color: rgb(0, 132, 255);
+  border-radius: 100%;
+}
+
+#points {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  font-size: 24px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: beige;
+  background-color: rgb(0, 132, 255);
+  border-radius: 100%;
+}
+
+#saysTimer {
+  position: absolute;
+  top: -8px;
+  right: 40px;
+  background-color: rgb(0, 132, 255);
+  color: beige;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+#saysPoints {
+  position: absolute;
+  top: 23px;
+  right: 40px;
+  background-color: rgb(0, 132, 255);
+  color: beige;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.gameInfo {
+  color: aliceblue;
+  font-size: 18px;
+  max-width: 20vw;
+  background-color: rgb(255, 0, 212);
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 5vw;
+}
+
+#lives{
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+#lives img{
+  max-width: 80px;
+}
