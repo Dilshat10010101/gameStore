@@ -68,8 +68,8 @@
 #game-container2 {
   background-image: url('../material/frozen.jpg');
   background-size: cover;
-  width: 800px;
-  height: 600px;
+  width: 80vw;
+  height: 40vw;
   position: relative;
   border: black solid 1px;
   margin: 5vw;
@@ -83,6 +83,13 @@
   background-size: cover;
   transition: all 0.5s ease;
   cursor: pointer;
+}
+@media only screen and (max-width: 640px) {
+  .object{
+    height: 70px;
+    width: 50px;
+  }
+
 }
 
 #countdown {
@@ -153,5 +160,5 @@
 }
 
 #lives img{
-  max-width: 80px;
+  max-width: 5vw;
 }

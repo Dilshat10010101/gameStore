@@ -76,7 +76,7 @@ function updateCountdown() {
     loseLife();
     resetCountdown();
     moveObject();
-    countdownInterval = setInterval(updateCountdown, 1000);
+    countdownInterval = setInterval(updateCountdown, 100000);
   }
 }
 
@@ -120,11 +120,11 @@ function loseLife() {
 }
 
 function moveObject() {
-  const randomX = Math.floor(Math.random() * (800 - 120));
-  const randomY = Math.floor(Math.random() * (600 - 120));
+  const randomX = Math.floor(Math.random() * (75));
+  const randomY = Math.floor(Math.random() * (35));
 
-  object.style.left = randomX + 'px';
-  object.style.top = randomY + 'px';
+  object.style.left = randomX + 'vw';
+  object.style.top = randomY + 'vw';
 }
 
 object.addEventListener('click', () => {
